@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<link rel="stylesheet" href="default.css" type="text/css">
+<title><TMPL_VAR NAME="title">: <TMPL_VAR NAME="cat"></title>
+</head>
+<body>
+<div class="catnav"><TMPL_VAR NAME="catnav"></div>
+<div class="catlist">
+<p>カテゴリ:</p>
+<TMPL_VAR NAME="catlist">
+</div>
+
+
+
+<hr>
+<address>
+<TMPL_VAR NAME="name"><br>
+<a href="<TMPL_VAR NAME="home_url">"><TMPL_VAR NAME="home_title"></a>, 
+<a href="mailto:<TMPL_VAR NAME="email">"><TMPL_VAR NAME="email"></a>
+</address>
+<div class="switch-link"><a href="./admin.cgi">管理者用画面</a></div>
+</body>
+</html>

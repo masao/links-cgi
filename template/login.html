@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<link rel="stylesheet" href="default.css" type="text/css">
+<link rev="made" href="mailto:masao@ulis.ac.jp">
+<title><TMPL_VAR NAME="title">: 管理者用</title>
+</head>
+<body>
+<h1>ログインしてください</h1>
+<p>
+ログインしてください。
+</p>
+<p>
+<form action="<TMPL_VAR NAME="script">" method="POST">
+<input type="password" name="passwd" value="" size="30">
+<input type="submit" value=" ログイン ">
+</form>
+</p>
+<hr>
+<div class="switch-link"><a href="./links.cgi"><TMPL_VAR NAME="title"></a></div>
+</body>
+</html>

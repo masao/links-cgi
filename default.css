@@ -1,0 +1,55 @@
+h1 {
+  text-align: center;
+}
+body {
+  font-family: 'MS UI Gothic', sans-serif;
+}
+address {
+  text-align: right;
+}
+
+p.error-message {
+  background-color: #ffc0cb;
+  padding: 2px;
+}
+p.message {
+  background-color: silver;
+  padding: 2px;
+}
+
+.catnav {
+  background-color: skyblue;
+  padding: 5px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 0 0 thin thick;
+}
+
+.catnav-here {
+  font-size: 150%;
+}
+
+/*
+.catlist {
+  border: solid thin;
+  padding: 5px;
+}
+*/
+
+.addcat-form {
+  margin-left: 4em;
+  margin-right: 4em;
+  border: solid thin gray;
+  padding: 5px;
+}
+
+.addlink-form {
+  margin-left: 4em;
+  margin-right: 4em;
+  border: solid thin gray;
+  padding: 5px;
+}
+
+.switch-link {
+  text-align: right;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<link rel="stylesheet" href="default.css" type="text/css">
+<title><TMPL_VAR NAME="title"> (管理者用): <TMPL_VAR NAME="cat"></title>
+</head>
+<body>
+<div class="catnav"><TMPL_VAR NAME="catnav"></div>
+<p>
+カテゴリ:
+</p>
+<TMPL_VAR NAME="catlist">
+
+<div class="addcat-form">
+<p>
+新規カテゴリの追加:
+</p>
+<form action="<TMPL_VAR NAME="script">" method="POST">
+<input type="hidden" name="action" value="addcat">
+カテゴリ名: <input type="text" name="name" value="" size="60"><br>
+説明: <input type="text" name="description" value="" size="60"><br>
+<input type="hidden" name="catid" value="<TMPL_VAR NAME="catid">">
+<input type="submit" value=" 追加 ">
+</form>
+</div>
+
+<hr>
+<div class="addlink-form">
+<p>
+新規リンクの追加:
+</p>
+<form action="<TMPL_VAR NAME="script">" method="POST">
+<input type="hidden" name="action" value="addcat">
+名前: <input type="text" name="name" value="" size="60"><br>
+URL: <input type="text" name="url" value="" size="60"><br>
+説明: <input type="text" name="description" value="" size="60"><br>
+<input type="hidden" name="catid" value="<TMPL_VAR NAME="catid">">
+<input type="submit" value=" 追加 ">
+</form>
+</div>
+
+<hr>
+<div class="switch-link"><a href="./links.cgi"><TMPL_VAR NAME="title"></a></div>
+</body>
+</html>
